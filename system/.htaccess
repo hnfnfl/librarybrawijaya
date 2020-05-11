@@ -1,0 +1,9 @@
+<IfModule authz_core_module>
+	Require all denied
+</IfModule>
+<IfModule !authz_core_module>
+	Deny from all
+</IfModule>
+<FilesMatch ".(eot|otf|ttf|woff|woff2)">
+    Header always set Access-Control-Allow-Origin "librarybrawijaya.online"
+</FilesMatch>
